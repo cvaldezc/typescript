@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Target moderno, transpila decoradores */
+    "target": "ES2022",
+
+    /* ESM en Node */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    /* Librerías base */
+    "lib": ["ES2022"],
+    "types": ["node"],
+
+    /* Necesario para decoradores estándar */
+    "useDefineForClassFields": true,
+    "experimentalDecorators": false,
+    "emitDecoratorMetadata": false,
+
+    /* Outputs */
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Checks */
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": false,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
+
+

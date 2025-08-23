@@ -5,7 +5,7 @@ export const getPokemon = async( pokemonId: number ): Promise<Pokemon> => {
 
     const res = await axios.get<Pokemon>( `https://pokeapi.co/api/v2/pokemon/${ pokemonId }` )
     console.log( res.data.name );
-    return 1;
+    return res.data;
 }
 
 
